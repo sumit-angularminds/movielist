@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AngularJS</title>
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    </head>
+
+    <script type="text/javascript" src="my-ctrl.js"></script>
+    <script type="text/javascript" src="movie.js"></script>
+  </head>
+  <body ng-app="myapp">
+    <div ng-controller="HelloController">
+      <input type="text" ng-model="searchText" />
+      <input type="button" value="Search" ng-click="searchMovies()" />
+
+      <br /><br />
+
+      <div ng-repeat="mov in moviesList">
+        <movie-list data="{{mov}}"></movie-list>
+      </div>
+    </div>
+  </body>
+</html>
