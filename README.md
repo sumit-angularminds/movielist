@@ -8,6 +8,10 @@ The resulting list of movies is then displayed to the user in a tabular represen
 # How to run
 Inside the folder run the code using any server
 Example: http-server
-Install: npm install http-server
-Run: http-server
+
+# Install http-server:
+npm install http-server
+
+# Run server: 
+http-server
 
